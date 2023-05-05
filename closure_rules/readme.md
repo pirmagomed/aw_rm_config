@@ -1,0 +1,7 @@
+How to export a closure rule from Teamcenter:
+
+1.   Find the UID of the ClosureRule, using the query: __Closure_Rule_Objects, and find the UID using "Print Object"
+
+![closure_rule_export](https://support.sw.siemens.com/kbassets/PL8016398/e82d93659a58b591bcef19d6f93eba81417d7e7e2734f00a74fde4fdb9af.png)
+
+2. Then, use the utility: tcxml_export -u=infodba -p=<password> -g=dba -uid=<UID of ClosureRule> -file=<output filename>
