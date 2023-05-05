@@ -1,1 +1,4 @@
-readme
+How to export a closure rule from Teamcenter:
+
+1.   Find the UID of the ClosureRule, using the query: __Closure_Rule_Objects, and find the UID using "Print Object" 
+2.   Then, use the utility: tcxml_export -u=infodba -p=<password> -g=dba -uid=<UID of ClosureRule> -file=<output filename>
